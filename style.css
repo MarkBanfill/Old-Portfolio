@@ -4,7 +4,7 @@ body {
   font-size: medium;
   line-height: 1.5em;
   font-family: 'Quattrocento Sans', sans-serif;
-  background: linear-gradient(to top, #c2e9fb 0%, #a1c4fd 100%);
+  background: linear-gradient(to top, #D7E7F7 0%, #a1c4fd 100%);
   overflow-x: hidden;
 }
 
@@ -215,6 +215,12 @@ h6 {
   max-width: 350px;
   margin: 5% 10% 10%;
 }
+#about.content-section .row:nth-of-type(2) img.pull-right {
+  width: 65%;
+}
+#about.content-section .row:last-of-type img.pull-right {
+  width: 100%;
+}
 
 #about.content-section .row {
   padding-top: 130px;
@@ -224,9 +230,35 @@ h6 {
   padding-top: 0;
 }
 
+#accordion .panel {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+#accordion .panel-heading {
+  background-color: transparent;
+  padding: 7px 0;
+}
+#accordion .panel-title {
+  font-weight: inherit;
+  line-height: 1;
+}
+#accordion .panel-title a:focus {
+  text-decoration: none;
+  font-weight: bold;
+}
+#accordion .panel-body {
+  padding: 10px 0;
+  border: none;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   #about.content-section img.pull-right {
     margin: 120px 0 0;
+  }
+  #about.content-section img.pull-right:last-of-type {
+    width: 30px 0 0;
   }
 }
 
@@ -326,9 +358,8 @@ h6 {
 }
 
 #contact .col-sm-4 img {
-  margin-top: 50px;
   position: relative;
-  top: 30px;
+  top: 120px;
 }
 
 .social-cont {
@@ -412,7 +443,7 @@ a.btn-default:hover:after {
 
 @keyframes animateCloud {
   0% {
-    margin-left: -350px;
+    margin-left: -650px;
   }
   100% {
     margin-left: 100%;
@@ -457,20 +488,20 @@ a.btn-default:hover:after {
 .cloud1 {
   animation: animateCloud 135s linear infinite;
   transform: scale(0.65);
-  margin-top: -40px
+  margin-top: -40px;
 }
 
 .cloud2 {
   animation: animateCloud 120s linear infinite;
   transform: scale(0.3);
-  left: 250px;
+  left: 400px;
 }
 
 .cloud3 {
   animation: animateCloud 130s linear infinite;
   transform: scale(0.4);
-  left: 450px;
-  margin-top: -60px;
+  margin-top: -100px;
+  left: 350px;
 }
 
 
@@ -478,11 +509,7 @@ a.btn-default:hover:after {
 
 .sun {
   position: absolute;
-  top: -300px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  left: 60%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -608,7 +635,7 @@ a.btn-default:hover:after {
 
 .birds {
   position: absolute;
-  left: 40%;
+  left: 20%;
   margin-top: -80px;
 }
 
@@ -620,6 +647,8 @@ a.btn-default:hover:after {
 }
 
 .ground {
-  height: 100px;
-  background-color: #01A611;
+  height: 134px;
+  background-image: url("http://gdurl.com/1M_T");
+  background-repeat: repeat-x;
+  border-bottom: solid 50px #C8D65D;
 }
